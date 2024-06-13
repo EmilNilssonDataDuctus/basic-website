@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="searchparams.js"></script>
+    <title>Other page</title>
+  </head>
+  <body>
+    <h1>Search params explanation</h1>
+    <nav>
+      <div class="links">
+        <a href="/">Home</a>
+        <a href="other-page.html">Other page</a>
+      </div>
+    </nav>
+    <section>
+      <h2>HTML href links</h2>
+      <p>Overwrites other searchparams when clicked</p>
+      <div class="links">
+        <a href="?state=ngsdfd6dsfur2rd">Other search param</a>
+        <a href="?ui_locales=sv">Change lang to SWE</a>
+        <a href="?ui_locales=en">Change lang to ENG</a>
+      </div>
+    </section>
+    <section>
+      <h2>javascript onclick links</h2>
+      <p>Appends other searchparams when clicked</p>
+      <div class="links">
+        <a href="javascript:void(0)" onclick="changeLang('sv')">SWE</a>
+        <a href="javascript:void(0)" onclick="changeLang('en')">ENG</a>
+      </div>
+    </section>
+  </body>
+</html>

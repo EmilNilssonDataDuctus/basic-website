@@ -1,0 +1,14 @@
+.links {
+  border-top: 1px solid black;
+  margin-bottom: 20px;
+}
+a {
+  display: block;
+  padding: 10px;
+  border-bottom: 1px dashed black;
+
+  transition: background-color 300ms;
+}
+a:hover {
+  background-color: aqua;
+}
